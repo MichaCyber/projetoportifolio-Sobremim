@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./imagens/minhafoto.jpeg" alt="Foto de Michelle Sá" class="foto-perfil">
+        <div class="perfil">
+            <h1>Michelle Sá</h1>
+            <p class="descricao" id="descricao">Desenvolvedora Front-End</p>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou uma Desenvolvedora Front-End em formação, cursando Análise e Desenvolvimento de Sistemas.
+                Tenho estudado HTML, CSS, JavaScript, SQL e Python, sempre buscando aprimorar minhas habilidades.
+                Busco minha primeira oportunidade na área para aplicar meus conhecimentos em interfaces modernas e
+                responsivas.
+                Comprometida com aprendizado contínuo e boas práticas de desenvolvimento. Meu sonho é entrar na área e
+                sei que
+                meu compromisso e dedicação irão me levar onde quero. Até lá, sigo estudando e me divertindo.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./imagens/minhadevflix.png" alt="Minha Devflix" class="projetos-imagem">
+                <h3 class="info-projeto">Clone do Netflix</h3>
+                <p class="paragrafo-projetos">
+                    "Netflix Clone, interface de Streaming.
+                    Este projeto é um clone da interface da Netflix desenvolvido para aprimorar minhas habilidades em
+                    desenvolvimento front-end. O objetivo foi recriar o layout da plataforma, focando na estruturação de
+                    componentes, estilização e responsividade."
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./imagens/imagem2.png" alt="Site de Cosméticos" class="projetos-imagem">
+                <h3 class="info-projeto">Site de Cosméticos</h3>
+                <p class="paragrafo-projetos">
+                    "Site de Produtos de Beleza. Desenvolvido para apresentar e vender produtos de beleza, com um layout limpo e responsivo. O projeto foca na apresentação de produtos, incluindo imagens, descrições e preços. Layout responsivo para diferentes dispositivos."
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./imagens/previsa0=do-tempo.png" alt="API de Clima" class="projetos-imagem">
+                <h3 class="info-projeto">API de Clima</h3>
+                <p class="paragrafo-projetos">
+                    "API de clima que permite visualizar a previsão do tempo em tempo real para qualquer cidade, consumindo dados de uma API externa. Busca de cidades e exibição das condições climáticas atuais. Interface simples e responsiva."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo_form">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

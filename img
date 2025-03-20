@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./imagens/minhafoto.jpeg" alt="Foto de Michelle Sá" class="foto-perfil">
+        <div class="perfil">
+            <h1>Michelle Sá</h1>
+            <p class="descricao">Desenvolvedora Front-End</p>
+        </div>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou uma Desenvolvedora Front-End em formação, cursando Análise e Desenvolvimento de Sistemas.
+                Tenho estudado HTML, CSS, JavaScript, SQL e Python etc, sempre buscando aprimorar minhas habilidades.
+                Busco minha primeira oportunidade na área para aplicar meus conhecimentos em interfaces modernas e
+                responsivas.
+                Comprometida com aprendizado contínuo e boas práticas de desenvolvimento. Meu sonho é entrar na área e
+                sei que
+                meu compromisso e dedicação irão me levar onde quero. Até lá, sigo estudando e me divertindo.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./imagens/minhadevflix.png" alt="Minha Devflix" class="projetos-imagem">
+                <h3 class="info-projeto">Clone do Netflix</h3>
+                <p class="paragrafo-projetos">
+                    "Netflix Clone, interface de Streaming.
+                    Este projeto é um clone da interface da Netflix desenvolvido para aprimorar minhas habilidades em
+                    desenvolvimento front-end. O objetivo foi recriar o layout da plataforma, focando na estruturação de
+                    componentes, estilização e responsividade."
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./imagens/imagem2.png" alt="Site de Cosméticos" class="projetos-imagem">
+                <h3 class="info-projeto">Site de Cosméticos</h3>
+                <p class="paragrafo-projetos">
+                    "Site de Produtos de Beleza. Desenvolvido para apresentar e vender produtos de beleza, com um layout
+                    limpo e responsivo. O projeto foca na apresentação de produtos, incluindo imagens, descrições e
+                    preços.
+                    Layout responsivo para diferentes dispositivos. Exibição de produtos com imagens e informações.
+                    Design
+                    atraente e funcional."
+                </p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./imagens/previsa0=do-tempo.png" alt="API de Clima" class="projetos-imagem">
+                <h3 class="info-projeto">API de Clima</h3>
+                <p class="paragrafo-projetos">
+                    "API de clima que permite visualizar a previsão do tempo em tempo real para qualquer cidade,
+                    consumindo
+                    dados de uma API externa. Busca de cidades e exibição das condições climáticas atuais. Interface
+                    simples e
+                    responsiva. Consumo de API para dados atualizados."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo_form">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Fonte mais moderna */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #cc5f9b;
+    --secundaria: #ed3aa8;
+    --escuro: #ec0db1;
+    --maisEscuro: black;
+    --claro: rgb(26, 24, 24);
+    --vidro: #7964701a;
+}
+
+body {
+    background-color: rgb(255, 192, 203);
+    color: var(--claro);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navegação */
+.navegacao {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    z-index: 100;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    /* Sombras mais sutis */
+    transition: all 0.3s ease;
+}
+
+.navegacao:hover {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    /* Efeito ao passar o mouse */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.menu-link:hover {
+    color: var(--secundaria);
+    transform: scale(1.1);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.foto-perfil {
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.4);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+}
+
+.perfil {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primaria);
+    letter-spacing: 1px;
+}
+
+.descricao {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--claro);
+    margin-top: 10px;
+}
+
+/* Sobre */
+.sobre {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(15, 23, 42, 0.5));
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--primaria);
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--primaria);
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
+
+.projetos-imagem {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+
+
+.projetos-card {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo mais claro */
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    /* sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.projetos-card:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom suave no hover */
+}
+
+.paragrafo-projetos {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    font-size: 1.1rem;
+    /* Aumentei um pouco o tamanho da fonte para maior legibilidade */
+    color: var(--claro);
+}
+
+
+/* Contato */
+#contatos {
+    background: var(--vidro);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#contatos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primaria);
+}
+
+#contatos input,
+#contatos textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#contatos input:focus,
+#contatos textarea:focus {
+    outline: none;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2.5rem;
+    }
+
+    .projetos-card {
+        margin-bottom: 20px;
+    }
+}
