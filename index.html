@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
+
     <nav class="navegacao">
         <ul class="menu">
             <li><a href="#inicio" class="menu-link">Início</a></li>
@@ -30,13 +32,17 @@
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Sou uma Desenvolvedora Front-End em formação, cursando Análise e Desenvolvimento de Sistemas.
-                Tenho estudado HTML, CSS, JavaScript, SQL e Python, sempre buscando aprimorar minhas habilidades.
-                Busco minha primeira oportunidade na área para aplicar meus conhecimentos em interfaces modernas e
-                responsivas.
-                Comprometida com aprendizado contínuo e boas práticas de desenvolvimento. Meu sonho é entrar na área e
-                sei que
-                meu compromisso e dedicação irão me levar onde quero. Até lá, sigo estudando e me divertindo.
+                Sou Desenvolvedora Front-End em formação, atualmente cursando Análise e Desenvolvimento de Sistemas.
+                Tenho me dedicado ao estudo de tecnologias como HTML, CSS, JavaScript, SQL e Python, buscando
+                constantemente evoluir minhas habilidades técnicas e criativas.
+                <br><br>
+                Estou em busca da minha primeira oportunidade na área para aplicar tudo o que venho aprendendo e
+                contribuir com soluções modernas, acessíveis e responsivas. Tenho paixão por desenvolvimento web e
+                compromisso com boas práticas de código.
+                <br><br>
+                Acredito no poder do aprendizado contínuo e da dedicação. Sei onde quero chegar, e sigo firme,
+                estudando, praticando e me desafiando para alcançar meus objetivos.
+
             </p>
         </div>
     </section>
@@ -44,46 +50,71 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
+
             <div class="projetos-card">
                 <img src="./imagens/minhadevflix.png" alt="Minha Devflix" class="projetos-imagem">
-                <h3 class="info-projeto">Clone do Netflix</h3>
-                <p class="paragrafo-projetos">
-                    "Netflix Clone, interface de Streaming.
-                    Este projeto é um clone da interface da Netflix desenvolvido para aprimorar minhas habilidades em
-                    desenvolvimento front-end. O objetivo foi recriar o layout da plataforma, focando na estruturação de
-                    componentes, estilização e responsividade."
-                </p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">Clone do Netflix</h3>
+                    <p class="paragrafo-projetos">
+                        Projeto de interface de streaming inspirado na Netflix. O objetivo foi recriar o layout da
+                        plataforma, focando na estruturação de componentes, estilização e responsividade.
+                    </p>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./imagens/imagem2.png" alt="Site de Cosméticos" class="projetos-imagem">
-                <h3 class="info-projeto">Site de Cosméticos</h3>
-                <p class="paragrafo-projetos">
-                    "Site de Produtos de Beleza. Desenvolvido para apresentar e vender produtos de beleza, com um layout limpo e responsivo. O projeto foca na apresentação de produtos, incluindo imagens, descrições e preços. Layout responsivo para diferentes dispositivos."
-                </p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">Site de Cosméticos</h3>
+                    <p class="paragrafo-projetos">
+                        Site para apresentação e venda de produtos de beleza, com layout limpo e responsivo. Inclui
+                        imagens, descrições e preços organizados de forma intuitiva para o usuário.
+                    </p>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./imagens/previsa0=do-tempo.png" alt="API de Clima" class="projetos-imagem">
-                <h3 class="info-projeto">API de Clima</h3>
-                <p class="paragrafo-projetos">
-                    "API de clima que permite visualizar a previsão do tempo em tempo real para qualquer cidade, consumindo dados de uma API externa. Busca de cidades e exibição das condições climáticas atuais. Interface simples e responsiva."
-                </p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projeto">API de Clima</h3>
+                    <p class="paragrafo-projetos">
+                        Projeto que consome dados de uma API externa para exibir a previsão do tempo em tempo real para
+                        qualquer cidade. Permite busca por localidade e apresenta as condições climáticas com interface
+                        simples e responsiva.
+                    </p>
+                </div>
             </div>
+
         </div>
     </section>
 
     <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contatos</h2>
-        <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
-                <input placeholder="Nome" class="campo_form">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhatsap(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
             </div>
             <div class="grupo-form">
-                <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"
+                    required></textarea>
             </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
         </form>
     </section>
+
+    <script>
+        function enviarwhatsap(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5581986077938';
+            const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            window.open(url, '_blank');
+        }
+    </script>
 
 </body>
 
