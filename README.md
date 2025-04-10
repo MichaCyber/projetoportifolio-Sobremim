@@ -21,7 +21,7 @@ Para visualizar este portfólio, siga um dos seguintes métodos:
 
 * `index.html`  A página principal do portfólio, contendo a estrutura HTML de todas as seções (Início, Sobre, Projetos, Contato) e a lógica de envio do formulário de contato via WhatsApp.
 * `styles.css`   Arquivo com toda a estilização CSS para o portfólio, incluindo o layout, cores, tipografia e responsividade.
-* `imagens/`    Pasta contendo as imagens utilizadas no portfólio, como sua foto de perfil (`minhafoto.jpeg`), imagens dos projetos (`minhadevflix.png`, `imagem2.png`, `previsa0=do-tempo.png`) e quaisquer outros assets visuais.
+* `imagens/`    Pasta contendo as imagens utilizadas no portfólio, como  imagens dos projetos (`minhadevflix.png`, `imagem2.png`, `previsa0=do-tempo.png`) e quaisquer outros assets visuais.    
 
 ## Seções Principais
 
