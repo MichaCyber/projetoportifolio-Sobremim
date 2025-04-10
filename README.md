@@ -25,8 +25,8 @@ Para visualizar este portfólio, siga um dos seguintes métodos:
 
 ## Seções Principais
 
-* **Início:** Apresentação principal com sua foto, nome e breve descrição profissional.
-* **Sobre Mim:** Uma seção para compartilhar mais sobre sua trajetória, habilidades e objetivos.
+* **Início:** Apresentação principal com minha foto, nome e breve descrição profissional.
+* **Sobre Mim:** Uma seção para compartilhar mais sobre minha trajetória, habilidades e objetivos.
 * **Meus Projetos:** Destaque dos seus principais projetos com imagens e descrições.
 * **Entre em Contato:** Formulário simples para visitantes entrarem em contato via WhatsApp.
 
