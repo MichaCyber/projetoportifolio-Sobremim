@@ -34,7 +34,7 @@ Para visualizar este portfólio, siga um dos seguintes métodos:
 
 * **E-mail:** [michellesa353@gmail.com]
 * **LinkedIn:** [https://www.linkedin.com/feed/]
-* **WhatsApp:** O formulário de contato na página envia mensagens diretamente para o seu WhatsApp.
+* **WhatsApp:** O formulário de contato na página envia mensagens diretamente para o WhatsApp.
 
 ## Status do Projeto
 
